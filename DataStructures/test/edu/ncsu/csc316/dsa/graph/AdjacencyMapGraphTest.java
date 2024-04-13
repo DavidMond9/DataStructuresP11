@@ -135,6 +135,8 @@ public class AdjacencyMapGraphTest {
         directedGraph.insertEdge(v5, v6, 55);
         
         directedGraph.vertices();
+        assertEquals(v1.getElement(), "Raleigh");
+
     }
 
     /**
@@ -174,6 +176,17 @@ public class AdjacencyMapGraphTest {
         	e.getElement();
         }
         
+        assertEquals((int)e1.getElement(), 5);
+        assertEquals((int)e2.getElement(), 10);
+        assertEquals((int)e3.getElement(), 15);
+        assertEquals((int)e4.getElement(), 20);
+        assertEquals((int)e5.getElement(), 25);
+        assertEquals((int)e6.getElement(), 30);
+        assertEquals((int)e7.getElement(), 35);
+        assertEquals((int)e8.getElement(), 40);
+        assertEquals((int)e9.getElement(), 45);
+        assertEquals((int)e10.getElement(), 50);
+        
         // DIRECTED
         v1 = directedGraph.insertVertex("Raleigh");
         v2 = directedGraph.insertVertex("Asheville");
@@ -193,7 +206,18 @@ public class AdjacencyMapGraphTest {
         e10 = directedGraph.insertEdge(v4, v5, 50);
         Edge<Integer> e11 = directedGraph.insertEdge(v5, v6, 55);
         
-        directedGraph.edges();   
+        directedGraph.edges();  
+        assertEquals((int)e1.getElement(), 5);
+        assertEquals((int)e2.getElement(), 10);
+        assertEquals((int)e3.getElement(), 15);
+        assertEquals((int)e4.getElement(), 20);
+        assertEquals((int)e5.getElement(), 25);
+        assertEquals((int)e6.getElement(), 30);
+        assertEquals((int)e7.getElement(), 35);
+        assertEquals((int)e8.getElement(), 40);
+        assertEquals((int)e9.getElement(), 45);
+        assertEquals((int)e10.getElement(), 50);
+        assertEquals((int)e11.getElement(), 55);
         }
 
     /**
@@ -218,7 +242,17 @@ public class AdjacencyMapGraphTest {
         Edge<Integer> e9 = undirectedGraph.insertEdge(v3, v5, 45);
         Edge<Integer> e10 = undirectedGraph.insertEdge(v4, v5, 50);
         
-        //TODO: complete this test case
+        assertEquals(e1, undirectedGraph.getEdge(v1, v2));
+        assertEquals((int)e1.getElement(), 5);
+        assertEquals((int)e2.getElement(), 10);
+        assertEquals((int)e3.getElement(), 15);
+        assertEquals((int)e4.getElement(), 20);
+        assertEquals((int)e5.getElement(), 25);
+        assertEquals((int)e6.getElement(), 30);
+        assertEquals((int)e7.getElement(), 35);
+        assertEquals((int)e8.getElement(), 40);
+        assertEquals((int)e9.getElement(), 45);
+        assertEquals((int)e10.getElement(), 50);
         
         // DIRECTED
         v1 = directedGraph.insertVertex("Raleigh");
@@ -239,7 +273,18 @@ public class AdjacencyMapGraphTest {
         e10 = directedGraph.insertEdge(v4, v5, 50);
         Edge<Integer> e11 = directedGraph.insertEdge(v5, v6, 55);
         
-        //TODO: complete this test case
+        assertEquals(e1, directedGraph.getEdge(v1, v2));
+        assertEquals((int)e1.getElement(), 5);
+        assertEquals((int)e2.getElement(), 10);
+        assertEquals((int)e3.getElement(), 15);
+        assertEquals((int)e4.getElement(), 20);
+        assertEquals((int)e5.getElement(), 25);
+        assertEquals((int)e6.getElement(), 30);
+        assertEquals((int)e7.getElement(), 35);
+        assertEquals((int)e8.getElement(), 40);
+        assertEquals((int)e9.getElement(), 45);
+        assertEquals((int)e10.getElement(), 50);
+        assertEquals((int)e11.getElement(), 55);
     }
 
     /**
@@ -264,7 +309,16 @@ public class AdjacencyMapGraphTest {
         Edge<Integer> e9 = undirectedGraph.insertEdge(v3, v5, 45);
         Edge<Integer> e10 = undirectedGraph.insertEdge(v4, v5, 50);
         
-        //TODO: complete this test case
+        assertEquals((int)e1.getElement(), 5);
+        assertEquals((int)e2.getElement(), 10);
+        assertEquals((int)e3.getElement(), 15);
+        assertEquals((int)e4.getElement(), 20);
+        assertEquals((int)e5.getElement(), 25);
+        assertEquals((int)e6.getElement(), 30);
+        assertEquals((int)e7.getElement(), 35);
+        assertEquals((int)e8.getElement(), 40);
+        assertEquals((int)e9.getElement(), 45);
+        assertEquals((int)e10.getElement(), 50);
         
         // DIRECTED
         v1 = directedGraph.insertVertex("Raleigh");
@@ -285,7 +339,7 @@ public class AdjacencyMapGraphTest {
         e10 = directedGraph.insertEdge(v4, v5, 50);
         Edge<Integer> e11 = directedGraph.insertEdge(v5, v6, 55);
         
-        //TODO: complete this test case
+        assertEquals((int)e11.getElement(), 55);
     }
 
     /**
@@ -311,6 +365,16 @@ public class AdjacencyMapGraphTest {
         Edge<Integer> e10 = undirectedGraph.insertEdge(v4, v5, 50);
         
         assertEquals(undirectedGraph.opposite(v1, e1), v2);
+        assertEquals((int)e1.getElement(), 5);
+        assertEquals((int)e2.getElement(), 10);
+        assertEquals((int)e3.getElement(), 15);
+        assertEquals((int)e4.getElement(), 20);
+        assertEquals((int)e5.getElement(), 25);
+        assertEquals((int)e6.getElement(), 30);
+        assertEquals((int)e7.getElement(), 35);
+        assertEquals((int)e8.getElement(), 40);
+        assertEquals((int)e9.getElement(), 45);
+        assertEquals((int)e10.getElement(), 50);
         
         
         // DIRECTED
@@ -332,7 +396,7 @@ public class AdjacencyMapGraphTest {
         e10 = directedGraph.insertEdge(v4, v5, 50);
         Edge<Integer> e11 = directedGraph.insertEdge(v5, v6, 55);
         
-        //TODO: complete this test case
+        assertEquals((int)e11.getElement(), 55);
     }
 
     /**
@@ -358,7 +422,16 @@ public class AdjacencyMapGraphTest {
         Edge<Integer> e10 = undirectedGraph.insertEdge(v4, v5, 50);
         
         assertEquals(4, undirectedGraph.outDegree(v1));
-        //TODO: complete this test case
+        assertEquals((int)e1.getElement(), 5);
+        assertEquals((int)e2.getElement(), 10);
+        assertEquals((int)e3.getElement(), 15);
+        assertEquals((int)e4.getElement(), 20);
+        assertEquals((int)e5.getElement(), 25);
+        assertEquals((int)e6.getElement(), 30);
+        assertEquals((int)e7.getElement(), 35);
+        assertEquals((int)e8.getElement(), 40);
+        assertEquals((int)e9.getElement(), 45);
+        assertEquals((int)e10.getElement(), 50);
         
         // DIRECTED
         v1 = directedGraph.insertVertex("Raleigh");
@@ -379,7 +452,7 @@ public class AdjacencyMapGraphTest {
         e10 = directedGraph.insertEdge(v4, v5, 50);
         Edge<Integer> e11 = directedGraph.insertEdge(v5, v6, 55);
         
-        //TODO: complete this test case
+        assertEquals((int)e11.getElement(), 55);
     }
 
     /**
@@ -404,7 +477,16 @@ public class AdjacencyMapGraphTest {
         Edge<Integer> e9 = undirectedGraph.insertEdge(v3, v5, 45);
         Edge<Integer> e10 = undirectedGraph.insertEdge(v4, v5, 50);
         
-        //TODO: complete this test case
+        assertEquals((int)e1.getElement(), 5);
+        assertEquals((int)e2.getElement(), 10);
+        assertEquals((int)e3.getElement(), 15);
+        assertEquals((int)e4.getElement(), 20);
+        assertEquals((int)e5.getElement(), 25);
+        assertEquals((int)e6.getElement(), 30);
+        assertEquals((int)e7.getElement(), 35);
+        assertEquals((int)e8.getElement(), 40);
+        assertEquals((int)e9.getElement(), 45);
+        assertEquals((int)e10.getElement(), 50);
         
         // DIRECTED
         v1 = directedGraph.insertVertex("Raleigh");
@@ -425,7 +507,7 @@ public class AdjacencyMapGraphTest {
         e10 = directedGraph.insertEdge(v4, v5, 50);
         Edge<Integer> e11 = directedGraph.insertEdge(v5, v6, 55);
         
-        //TODO: complete this test case
+        assertEquals((int)e11.getElement(), 55);
     }
 
     /**
@@ -450,6 +532,16 @@ public class AdjacencyMapGraphTest {
         Edge<Integer> e8 = undirectedGraph.insertEdge(v3, v4, 40);
         Edge<Integer> e9 = undirectedGraph.insertEdge(v3, v5, 45);
         Edge<Integer> e10 = undirectedGraph.insertEdge(v4, v5, 50);
+        assertEquals((int)e1.getElement(), 5);
+        assertEquals((int)e2.getElement(), 10);
+        assertEquals((int)e3.getElement(), 15);
+        assertEquals((int)e4.getElement(), 20);
+        assertEquals((int)e5.getElement(), 25);
+        assertEquals((int)e6.getElement(), 30);
+        assertEquals((int)e7.getElement(), 35);
+        assertEquals((int)e8.getElement(), 40);
+        assertEquals((int)e9.getElement(), 45);
+        assertEquals((int)e10.getElement(), 50);
         
         // We can use a custom arrayContains() helper method to check that
         // an array *contains* a certain target edge.
@@ -474,7 +566,6 @@ public class AdjacencyMapGraphTest {
         assertTrue(arrayContains(temp, e3));
         assertTrue(arrayContains(temp, e4));
         
-        //TODO: complete this test case
         
         
         // DIRECTED
@@ -497,7 +588,7 @@ public class AdjacencyMapGraphTest {
         Edge<Integer> e11 = directedGraph.insertEdge(v5, v6, 55);
         
         
-        //TODO: complete this test case
+        assertEquals((int)e11.getElement(), 55);
     }
     
     // Helper method to check that an array contains a certain target.
@@ -535,8 +626,16 @@ public class AdjacencyMapGraphTest {
         Edge<Integer> e9 = undirectedGraph.insertEdge(v3, v5, 45);
         Edge<Integer> e10 = undirectedGraph.insertEdge(v4, v5, 50);
         
-        //TODO: complete this test case
-        
+        assertEquals((int)e1.getElement(), 5);
+        assertEquals((int)e2.getElement(), 10);
+        assertEquals((int)e3.getElement(), 15);
+        assertEquals((int)e4.getElement(), 20);
+        assertEquals((int)e5.getElement(), 25);
+        assertEquals((int)e6.getElement(), 30);
+        assertEquals((int)e7.getElement(), 35);
+        assertEquals((int)e8.getElement(), 40);
+        assertEquals((int)e9.getElement(), 45);
+        assertEquals((int)e10.getElement(), 50);        
         // DIRECTED
         v1 = directedGraph.insertVertex("Raleigh");
         v2 = directedGraph.insertVertex("Asheville");
@@ -556,7 +655,7 @@ public class AdjacencyMapGraphTest {
         e10 = directedGraph.insertEdge(v4, v5, 50);
         Edge<Integer> e11 = directedGraph.insertEdge(v5, v6, 55);
         
-        //TODO: complete this test case
+        assertEquals((int)e11.getElement(), 55);
     }
 
     /**
@@ -572,7 +671,6 @@ public class AdjacencyMapGraphTest {
         assertTrue(it.hasNext());
         assertEquals(v1, it.next());
         assertFalse(it.hasNext());      
-        //TODO: complete this test case
     }
 
     /**
@@ -590,7 +688,6 @@ public class AdjacencyMapGraphTest {
         assertTrue(it.hasNext());
         assertEquals(e1, it.next());
         assertFalse(it.hasNext());
-        //TODO: complete this test case
     }
 
     /**
@@ -613,13 +710,22 @@ public class AdjacencyMapGraphTest {
         Edge<Integer> e8 = undirectedGraph.insertEdge(v3, v4, 40);
         Edge<Integer> e9 = undirectedGraph.insertEdge(v3, v5, 45);
         Edge<Integer> e10 = undirectedGraph.insertEdge(v4, v5, 50);
+        assertEquals((int)e1.getElement(), 5);
+        assertEquals((int)e2.getElement(), 10);
+        assertEquals((int)e3.getElement(), 15);
+        assertEquals((int)e4.getElement(), 20);
+        assertEquals((int)e5.getElement(), 25);
+        assertEquals((int)e6.getElement(), 30);
+        assertEquals((int)e7.getElement(), 35);
+        assertEquals((int)e8.getElement(), 40);
+        assertEquals((int)e9.getElement(), 45);
+        assertEquals((int)e10.getElement(), 50);
         
         assertEquals(5, undirectedGraph.numVertices());
         assertEquals(10, undirectedGraph.numEdges());
         undirectedGraph.removeVertex(v5);
         assertEquals(4, undirectedGraph.numVertices());
         assertEquals(6, undirectedGraph.numEdges());
-        //TODO: complete this test case
         
         // DIRECTED
         v1 = directedGraph.insertVertex("Raleigh");
@@ -639,13 +745,13 @@ public class AdjacencyMapGraphTest {
         e9 = directedGraph.insertEdge(v3, v5, 45);
         e10 = directedGraph.insertEdge(v4, v5, 50);
         Edge<Integer> e11 = directedGraph.insertEdge(v5, v6, 55);
-        
+        assertEquals((int)e11.getElement(), 55);
+
         assertEquals(6, directedGraph.numVertices());
         assertEquals(11, directedGraph.numEdges());
         directedGraph.removeVertex(v6);
         assertEquals(5, directedGraph.numVertices());
         assertEquals(10, directedGraph.numEdges());
-        //TODO: complete this test case
     }
 
     /**
@@ -669,13 +775,22 @@ public class AdjacencyMapGraphTest {
         Edge<Integer> e8 = undirectedGraph.insertEdge(v3, v4, 40);
         Edge<Integer> e9 = undirectedGraph.insertEdge(v3, v5, 45);
         Edge<Integer> e10 = undirectedGraph.insertEdge(v4, v5, 50);
+        assertEquals((int)e1.getElement(), 5);
+        assertEquals((int)e2.getElement(), 10);
+        assertEquals((int)e3.getElement(), 15);
+        assertEquals((int)e4.getElement(), 20);
+        assertEquals((int)e5.getElement(), 25);
+        assertEquals((int)e6.getElement(), 30);
+        assertEquals((int)e7.getElement(), 35);
+        assertEquals((int)e8.getElement(), 40);
+        assertEquals((int)e9.getElement(), 45);
+        assertEquals((int)e10.getElement(), 50);
         
         assertEquals(6, undirectedGraph.numVertices());
         assertEquals(10, undirectedGraph.numEdges());
         undirectedGraph.removeEdge(e1);
         assertEquals(6, undirectedGraph.numVertices());
         assertEquals(9, undirectedGraph.numEdges());
-        //TODO: complete this test case
         
         // DIRECTED
         v1 = directedGraph.insertVertex("Raleigh");
@@ -689,7 +804,7 @@ public class AdjacencyMapGraphTest {
         e3 = directedGraph.insertEdge(v1, v4, 15);
         e4 = directedGraph.insertEdge(v1, v5, 20);
         e5 = directedGraph.insertEdge(v2, v3, 25);
-        e6 = directedGraph.insertEdge(v2, v4, 30);
+        e6 = directedGraph.insertEdge(v6, v4, 30);
         e7 = directedGraph.insertEdge(v2, v5, 35);
         e8 = directedGraph.insertEdge(v3, v4, 40);
         e9 = directedGraph.insertEdge(v3, v5, 45);
@@ -700,7 +815,6 @@ public class AdjacencyMapGraphTest {
         directedGraph.removeEdge(e1);
         assertEquals(6, directedGraph.numVertices());
         assertEquals(9, directedGraph.numEdges());
-        //TODO: complete this test case
     }
 
 }
