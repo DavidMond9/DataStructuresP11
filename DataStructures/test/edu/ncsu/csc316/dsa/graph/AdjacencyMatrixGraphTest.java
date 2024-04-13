@@ -239,6 +239,7 @@ public class AdjacencyMatrixGraphTest {
         assertEquals((int)e8.getElement(), 40);
         assertEquals((int)e9.getElement(), 45);
         assertEquals((int)e10.getElement(), 50);
+        assertEquals(e1, undirectedGraph.getEdge(v1, v2));
         
         // DIRECTED
         v1 = directedGraph.insertVertex("Raleigh");
@@ -250,7 +251,7 @@ public class AdjacencyMatrixGraphTest {
         e1 = directedGraph.insertEdge(v1, v2, 5);
         e2 = directedGraph.insertEdge(v1, v3, 10);
         e3 = directedGraph.insertEdge(v1, v4, 15);
-        e4 = directedGraph.insertEdge(v1, v5, 20);
+        e4 = directedGraph.insertEdge(v1, v6, 20);
         e5 = directedGraph.insertEdge(v2, v3, 25);
         e6 = directedGraph.insertEdge(v2, v4, 30);
         e7 = directedGraph.insertEdge(v2, v5, 35);
@@ -452,6 +453,8 @@ public class AdjacencyMatrixGraphTest {
         assertEquals((int)e8.getElement(), 40);
         assertEquals((int)e9.getElement(), 45);
         assertEquals((int)e10.getElement(), 50);
+        assertEquals(0, undirectedGraph.inDegree(v6));
+
         
         // DIRECTED
         v1 = directedGraph.insertVertex("Raleigh");
