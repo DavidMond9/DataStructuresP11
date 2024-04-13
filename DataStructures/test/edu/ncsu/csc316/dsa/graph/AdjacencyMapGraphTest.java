@@ -487,6 +487,8 @@ public class AdjacencyMapGraphTest {
         assertEquals((int)e8.getElement(), 40);
         assertEquals((int)e9.getElement(), 45);
         assertEquals((int)e10.getElement(), 50);
+        assertEquals(0, undirectedGraph.inDegree(v6));
+
         
         // DIRECTED
         v1 = directedGraph.insertVertex("Raleigh");

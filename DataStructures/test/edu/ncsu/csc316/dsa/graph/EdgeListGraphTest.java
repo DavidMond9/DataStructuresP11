@@ -486,7 +486,9 @@ public class EdgeListGraphTest {
         assertEquals((int)e7.getElement(), 35);
         assertEquals((int)e8.getElement(), 40);
         assertEquals((int)e9.getElement(), 45);
-        assertEquals((int)e10.getElement(), 50);        
+        assertEquals((int)e10.getElement(), 50); 
+        assertEquals(1, undirectedGraph.inDegree(v6));
+
         // DIRECTED
         v1 = directedGraph.insertVertex("Raleigh");
         v2 = directedGraph.insertVertex("Asheville");
