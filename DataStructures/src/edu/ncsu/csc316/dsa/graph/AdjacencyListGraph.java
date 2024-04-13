@@ -239,7 +239,7 @@ public class AdjacencyListGraph<V, E> extends EdgeListGraph<V, E> {
 
     /**
      * Safely casts an Edge to an adjacency list edge
-     * 
+     * @param e edge to validate
      * @return an adjacency list edge representation of the given Edge
      * @throws IllegalArgumentException if the edge is not a valid adjacency list
      *                                  edge
@@ -253,7 +253,7 @@ public class AdjacencyListGraph<V, E> extends EdgeListGraph<V, E> {
 
     /**
      * Safely casts a Vertex to an adjacency list vertex
-     * 
+     * @param v vertex to validate
      * @return an adjacency list vertex representation of the given Vertex
      * @throws IllegalArgumentException if the vertex is not a valid adjacency list
      *                                  vertex

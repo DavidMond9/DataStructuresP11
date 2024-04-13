@@ -21,8 +21,8 @@ import edu.ncsu.csc316.dsa.graph.Graph.Vertex;
  */
 public class AdjacencyMatrixGraphTest {
 
-    private Graph<String,Integer> undirectedGraph;
-    private Graph<String,Integer> directedGraph;
+    private Graph <String,Integer> undirectedGraph;
+    private Graph <String,Integer> directedGraph;
     
     /**
      * Create a new instance of an edge list graph before each test case executes
@@ -194,7 +194,7 @@ public class AdjacencyMatrixGraphTest {
         Vertex<String> v6 = directedGraph.insertVertex("Boone");
         e1 = directedGraph.insertEdge(v1, v2, 5);
         e2 = directedGraph.insertEdge(v1, v3, 10);
-        e3 = directedGraph.insertEdge(v1, v4, 15);
+        e3 = directedGraph.insertEdge(v1, v6, 15);
         e4 = directedGraph.insertEdge(v1, v5, 20);
         e5 = directedGraph.insertEdge(v2, v3, 25);
         e6 = directedGraph.insertEdge(v2, v4, 30);
@@ -273,7 +273,7 @@ public class AdjacencyMatrixGraphTest {
         Vertex<String> v6 = undirectedGraph.insertVertex("Boone");
         Edge<Integer> e1 = undirectedGraph.insertEdge(v1, v2, 5);
         Edge<Integer> e2 = undirectedGraph.insertEdge(v1, v3, 10);
-        Edge<Integer> e3 = undirectedGraph.insertEdge(v1, v4, 15);
+        Edge<Integer> e3 = undirectedGraph.insertEdge(v1, v6, 15);
         Edge<Integer> e4 = undirectedGraph.insertEdge(v1, v5, 20);
         Edge<Integer> e5 = undirectedGraph.insertEdge(v2, v3, 25);
         Edge<Integer> e6 = undirectedGraph.insertEdge(v2, v4, 30);
@@ -326,7 +326,7 @@ public class AdjacencyMatrixGraphTest {
         Vertex<String> v6 = undirectedGraph.insertVertex("Boone");
         Edge<Integer> e1 = undirectedGraph.insertEdge(v1, v2, 5);
         Edge<Integer> e2 = undirectedGraph.insertEdge(v1, v3, 10);
-        Edge<Integer> e3 = undirectedGraph.insertEdge(v1, v4, 15);
+        Edge<Integer> e3 = undirectedGraph.insertEdge(v1, v6, 15);
         Edge<Integer> e4 = undirectedGraph.insertEdge(v1, v5, 20);
         Edge<Integer> e5 = undirectedGraph.insertEdge(v2, v3, 25);
         Edge<Integer> e6 = undirectedGraph.insertEdge(v2, v4, 30);
@@ -382,7 +382,7 @@ public class AdjacencyMatrixGraphTest {
         Edge<Integer> e1 = undirectedGraph.insertEdge(v1, v2, 5);
         Edge<Integer> e2 = undirectedGraph.insertEdge(v1, v3, 10);
         Edge<Integer> e3 = undirectedGraph.insertEdge(v1, v4, 15);
-        Edge<Integer> e4 = undirectedGraph.insertEdge(v1, v5, 20);
+        Edge<Integer> e4 = undirectedGraph.insertEdge(v1, v6, 20);
         Edge<Integer> e5 = undirectedGraph.insertEdge(v2, v3, 25);
         Edge<Integer> e6 = undirectedGraph.insertEdge(v2, v4, 30);
         Edge<Integer> e7 = undirectedGraph.insertEdge(v2, v5, 35);
@@ -491,7 +491,7 @@ public class AdjacencyMatrixGraphTest {
         Edge<Integer> e1 = undirectedGraph.insertEdge(v1, v2, 5);
         Edge<Integer> e2 = undirectedGraph.insertEdge(v1, v3, 10);
         Edge<Integer> e3 = undirectedGraph.insertEdge(v1, v4, 15);
-        Edge<Integer> e4 = undirectedGraph.insertEdge(v1, v5, 20);
+        Edge<Integer> e4 = undirectedGraph.insertEdge(v1, v6, 20);
         Edge<Integer> e5 = undirectedGraph.insertEdge(v2, v3, 25);
         Edge<Integer> e6 = undirectedGraph.insertEdge(v2, v4, 30);
         Edge<Integer> e7 = undirectedGraph.insertEdge(v2, v5, 35);
@@ -581,7 +581,7 @@ public class AdjacencyMatrixGraphTest {
         Edge<Integer> e1 = undirectedGraph.insertEdge(v1, v2, 5);
         Edge<Integer> e2 = undirectedGraph.insertEdge(v1, v3, 10);
         Edge<Integer> e3 = undirectedGraph.insertEdge(v1, v4, 15);
-        Edge<Integer> e4 = undirectedGraph.insertEdge(v1, v5, 20);
+        Edge<Integer> e4 = undirectedGraph.insertEdge(v1, v6, 20);
         Edge<Integer> e5 = undirectedGraph.insertEdge(v2, v3, 25);
         Edge<Integer> e6 = undirectedGraph.insertEdge(v2, v4, 30);
         Edge<Integer> e7 = undirectedGraph.insertEdge(v2, v5, 35);
@@ -731,7 +731,7 @@ public class AdjacencyMatrixGraphTest {
         Edge<Integer> e2 = undirectedGraph.insertEdge(v1, v3, 10);
         Edge<Integer> e3 = undirectedGraph.insertEdge(v1, v4, 15);
         Edge<Integer> e4 = undirectedGraph.insertEdge(v1, v5, 20);
-        Edge<Integer> e5 = undirectedGraph.insertEdge(v2, v3, 25);
+        Edge<Integer> e5 = undirectedGraph.insertEdge(v2, v6, 25);
         Edge<Integer> e6 = undirectedGraph.insertEdge(v2, v4, 30);
         Edge<Integer> e7 = undirectedGraph.insertEdge(v2, v5, 35);
         Edge<Integer> e8 = undirectedGraph.insertEdge(v3, v4, 40);

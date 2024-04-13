@@ -93,7 +93,7 @@ public class AdjacencyMatrixGraph<V, E> extends EdgeListGraph<V, E> {
 
     private int getVertexIndex() {
         vertexIndexer++;
-        return vertexIndexer-1;
+        return vertexIndexer - 1;
     }
 
     @SuppressWarnings("unchecked")

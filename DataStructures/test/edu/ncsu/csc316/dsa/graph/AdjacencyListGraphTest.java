@@ -21,8 +21,8 @@ import edu.ncsu.csc316.dsa.graph.Graph.Vertex;
  */
 public class AdjacencyListGraphTest {
 
-    private Graph<String,Integer> undirectedGraph;
-    private Graph<String,Integer> directedGraph;
+    private Graph <String,Integer> undirectedGraph;
+    private Graph <String,Integer> directedGraph;
     
     /**
      * Create a new instance of an edge list graph before each test case executes

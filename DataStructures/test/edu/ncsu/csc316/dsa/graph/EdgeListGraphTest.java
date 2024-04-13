@@ -21,8 +21,8 @@ import edu.ncsu.csc316.dsa.graph.Graph.Vertex;
  */
 public class EdgeListGraphTest {
 
-    private Graph<String,Integer> undirectedGraph;
-    private Graph<String,Integer> directedGraph;
+    private Graph <String,Integer> undirectedGraph;
+    private Graph <String,Integer> directedGraph;
     
     /**
      * Create a new instance of an edge list graph before each test case executes
@@ -434,7 +434,6 @@ public class EdgeListGraphTest {
         assertEquals((int)e10.getElement(), 50);
         
         assertEquals(4, undirectedGraph.outDegree(v1));
-        //TODO: complete this test case
         
         // DIRECTED
         v1 = directedGraph.insertVertex("Raleigh");
